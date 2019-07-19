@@ -123,7 +123,7 @@ public class CustomCameraActivity extends AppCompatActivity {
                 @Override
                 public void onAutoFocus(boolean success, Camera camera) {
                     if(success) {
-                        Toast.makeText(CustomCameraActivity.this, "调焦成功", Toast.LENGTH_SHORT);
+                        Toast.makeText(CustomCameraActivity.this, "调焦成功", Toast.LENGTH_SHORT).show();
                     }
                     else {
                         camera.autoFocus(this);
